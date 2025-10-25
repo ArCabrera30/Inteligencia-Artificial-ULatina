@@ -1,0 +1,44 @@
+# generar_train_csv.py
+import pandas as pd
+import numpy as np
+
+# Semilla para reproducibilidad (para que los datos siempre sean iguales)
+np.random.seed(42)
+
+# Generar 200 muestras (100 sanas y 100 infectadas)
+n = 200
+
+# ============================
+# Simulación de características biomédicas
+# ============================
+
+# Intensidad promedio del color (0 a 255)
+color_avg = np.random.normal(150, 25, n)
+
+# Nivel de textura de la célula (0 a 1)
+texture_level = np.random.uniform(0.2, 0.9, n)
+
+# Grado de redondez de la célula (0 a 1)
+roundness = np.random.uniform(0.5, 1.0, n)
+
+# Tamaño promedio del área celular (micras²)
+area_size = np.random.normal(300, 50, n)
+
+# Etiquetas: 0 = no infectada, 1 = infectada
+label = np.concatenate([np.zeros(100), np.ones(100)])
+np.random.shuffle(label)
+
+# Crear DataFrame
+df = pd.DataFrame({
+    "color_avg": color_avg,
+    "texture_level": texture_level,
+    "roundness": roundness,
+    "area_size": area_size,
+    "label": label.astype(int)
+})
+
+# Guardar como archivo CSV
+df.to_csv("train.csv", index=False)
+
+print("✅ Archivo 'train.csv' generado correctamente con", len(df), "registros.")
+print(df.head())
