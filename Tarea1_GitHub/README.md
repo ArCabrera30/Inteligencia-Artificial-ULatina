@@ -1,19 +1,18 @@
 # Tarea 1 — Repositorio y Overview de GitHub
 
 ## Objetivo
-- Configurar correctamente el repositorio y documentar su uso.
-- Explicar qué es GitHub, para qué sirve y buenas prácticas básicas.
+Comprender el funcionamiento de Git y GitHub, su utilidad en el control de versiones y la colaboración entre desarrolladores, además de aprender buenas prácticas para documentar proyectos.
 
-## Entregables
-- Este `README.md` completado.
-- `Overview.md` con respuestas.
+## Descripción
+En esta tarea se configuró un repositorio público llamado **“Inteligencia-Artificial-Ulatina”**.  
+Se organizaron carpetas para cada tarea del curso y se agregó un archivo README principal con instrucciones sobre cómo ejecutar los notebooks.
 
-## Preguntas sugeridas para `Overview.md`
-1. ¿Qué es Git y qué es GitHub?
-2. ¿Qué es un repositorio? ¿Qué diferencia hay entre público y privado?
-3. ¿Qué es un *commit* y para qué sirve el mensaje de commit?
-4. ¿Qué es un *branch*? ¿Cuándo crear uno?
-5. ¿Qué son *issues* y *pull requests*?
-6. ¿Qué es un `README` efectivo? Menciona 5 buenas prácticas.
+## Conceptos clave
+- **Git:** Sistema de control de versiones local que registra los cambios realizados en archivos.
+- **GitHub:** Plataforma en la nube donde se almacenan repositorios Git para compartir proyectos.
+- **Commit:** Registro de un cambio en el código.
+- **Branch:** Línea paralela de trabajo usada para probar o mejorar sin afectar el código principal.
+- **Pull Request:** Solicitud para combinar cambios desde una rama hacia la principal.
 
-> Completa tus respuestas en `Overview.md`.
+## Conclusión
+GitHub es una herramienta esencial en el desarrollo moderno, ya que permite mantener un control detallado del progreso del proyecto, facilita la colaboración en equipo y sirve como portafolio profesional para mostrar los avances personales o académicos.
