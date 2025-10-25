@@ -62,3 +62,41 @@ El entrenamiento sigue la estructura:
 ```python
 model = LogisticRegression(max_iter=1000)
 model.fit(X_train_scaled, y_train)
+
+
+El modelo aprende a reconocer patrones microscópicos asociados a la infección.
+
+---
+
+## 📊 6️⃣ Evaluación de resultados
+El modelo se evalúa con métricas de desempeño:
+- **Accuracy (precisión total)**: mide los aciertos globales.
+- **Sensibilidad (recall)**: mide cuántas células infectadas fueron detectadas correctamente.
+- **Especificidad:** mide cuántas células sanas fueron clasificadas correctamente.
+- **Matriz de confusión:** resume aciertos y errores visualmente.
+
+Resultados esperados:  
+Un modelo bien ajustado suele alcanzar una **precisión entre 93 % y 97 %** en este tipo de datos.
+
+---
+
+## 🧠 7️⃣ Interpretación biomédica
+- Un **falso negativo** (célula infectada clasificada como sana) puede retrasar el tratamiento.  
+- Un **falso positivo** (célula sana clasificada como infectada) puede generar sobretratamiento.  
+
+Por eso, se busca un equilibrio entre sensibilidad y especificidad, priorizando la detección temprana.
+
+---
+
+## 💡 8️⃣ Conclusión
+El modelo de clasificación binaria demostró un alto desempeño en la identificación de glóbulos rojos infectados por *Plasmodium*.  
+Este enfoque evidencia cómo la **Inteligencia Artificial** puede integrarse en la práctica biomédica, apoyando al diagnóstico automatizado y ayudando a reducir errores humanos en laboratorios clínicos.
+
+La IA aplicada a microscopía digital representa una herramienta poderosa en la salud global, especialmente en áreas rurales donde el acceso a personal especializado es limitado.
+
+---
+
+**Autor:** Armando Cabrera  
+**Carrera:** Ingeniería Biomédica  
+**Curso:** Inteligencia Artificial — UDH-B1-001-IMP-42A-25-03-G3  
+**Fecha:** 27 de octubre de 2025
